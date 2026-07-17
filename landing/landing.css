@@ -28,12 +28,11 @@ body {
 
 header{
 
-    position:fixed;
-
-    top:20px;
-    left:50%;
-
-    transform:translateX(-50%);
+    position: fixed !important;
+    top: 20px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    z-index: 999999 !important;
 
     width:92%;
     max-width:1450px;
@@ -55,8 +54,6 @@ header{
     border-radius:22px;
 
     box-shadow:0 20px 60px rgba(0,0,0,.15);
-
-    z-index:9999;
 
     transition:.35s;
 }
@@ -369,6 +366,18 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.typewritter{
+    display:inline-block;
+    width:fit-content;
+    overflow:hidden;
+    white-space:nowrap;
+    border-right:3px solid #9d38f6;
+
+    animation:
+        typing 2s steps(16,end) infinite alternate,
+        blink .8s step-end infinite;
 }
 
 .right .text-right {
@@ -1144,6 +1153,22 @@ a.btn {
 .landing-stat-card p {
     color: #999;
     font-size: 12px;
+}
+
+@keyframes typing{
+    from{
+        max-width:0;
+    }
+
+    to{
+        max-width:100%;
+    }
+}
+  
+@keyframes blink{
+    50%{
+      border-color: transparent;
+    }
 }
 
 @media (max-width: 900px) {
