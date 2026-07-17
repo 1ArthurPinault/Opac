@@ -1,0 +1,249 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #000;
+    color: white;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    width: 600px; height: 600px;
+    background: radial-gradient(circle, rgba(157,56,246,0.35), transparent 70%);
+    top: -200px; right: -200px; z-index: -1;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    width: 500px; height: 500px;
+    background: radial-gradient(circle, rgba(157,56,246,0.18), transparent 70%);
+    bottom: -150px; left: -150px; z-index: -1;
+}
+
+main {
+    padding-top: 160px;
+    padding-bottom: 120px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.badge {
+    display: inline-block;
+    background: rgba(157,56,246,0.15);
+    border: 1px solid rgba(157,56,246,0.4);
+    color: #cd9bfb;
+    padding: 6px 18px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+
+.pv-hero { text-align: center; margin-bottom: 46px; }
+.pv-hero h1 { font-size: 42px; font-weight: 700; line-height: 1.2; margin-bottom: 14px; }
+.pv-hero p { color: #999; font-size: 15px; max-width: 640px; margin: 0 auto; }
+.pv-hero .updated { color: #666; font-size: 12px; margin-top: 14px; }
+
+.toc {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 70px;
+}
+
+.toc a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 13px;
+    padding: 8px 16px;
+    border-radius: 30px;
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: .25s;
+}
+
+.toc a:hover { border-color: #9d38f6; color: #fff; }
+
+section.block { margin-bottom: 70px; scroll-margin-top: 120px; }
+
+.block-head { margin-bottom: 26px; }
+.block-head .block-number { color: #9d38f6; font-size: 13px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 6px; display: block; }
+.block-head h2 { font-size: 26px; font-weight: 700; margin-bottom: 8px; }
+.block-head p { color: #999; font-size: 14px; max-width: 700px; }
+
+/* Data cards */
+
+.data-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 18px;
+}
+
+.data-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 16px;
+    padding: 22px;
+}
+
+.data-card i { color: #9d38f6; font-size: 18px; margin-bottom: 12px; display: block; }
+.data-card h4 { font-size: 15px; margin-bottom: 8px; }
+.data-card p { font-size: 13px; color: #999; line-height: 1.6; }
+
+/* Rights list */
+
+.rights-list li {
+    list-style: none;
+    display: flex;
+    gap: 14px;
+    padding: 14px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.rights-list li:last-child { border-bottom: none; }
+
+.rights-list .right-title { font-size: 14px; font-weight: 600; color: #fff; margin-bottom: 4px; }
+.rights-list p { font-size: 13px; color: #999; line-height: 1.6; }
+
+.rights-list i {
+    width: 30px; height: 30px;
+    background: rgba(157,56,246,0.15);
+    border: 1px solid rgba(157,56,246,0.4);
+    color: #cd9bfb;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 12px; flex-shrink: 0;
+}
+
+/* GDPR Form */
+
+.form-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 20px;
+    padding: 34px;
+}
+
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+
+.field { margin-bottom: 20px; }
+
+.field label {
+    display: block;
+    font-size: 13px;
+    color: #ccc;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.field input,
+.field select,
+.field textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.14);
+    background: rgba(255,255,255,0.04);
+    color: #fff;
+    font-size: 14px;
+    font-family: inherit;
+}
+
+.field select option { background: #111; }
+.field textarea { resize: vertical; min-height: 100px; }
+
+.field input.error,
+.field select.error { border-color: #ff6b6b; }
+
+.error-text {
+    display: none;
+    color: #ff8a8a;
+    font-size: 12px;
+    margin-top: 6px;
+}
+
+.field.has-error .error-text { display: block; }
+
+.checkbox-field {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 22px;
+}
+
+.checkbox-field input[type="checkbox"] {
+    width: 18px; height: 18px;
+    margin-top: 2px;
+    accent-color: #9d38f6;
+    flex-shrink: 0;
+}
+
+.checkbox-field label { font-size: 13px; color: #ccc; }
+.checkbox-field.has-error label { color: #ff8a8a; }
+
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    border-radius: 12px;
+    border: none;
+    background: #9d38f6;
+    color: #fff;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    transition: .25s;
+}
+
+.submit-btn:hover { background: #8422e8; }
+
+/* Success state */
+
+.success-panel { display: none; text-align: center; padding: 50px 20px; }
+.success-panel.show { display: block; }
+.form-card.hidden-form > form { display: none; }
+
+.success-panel .check-circle {
+    width: 64px; height: 64px;
+    background: rgba(46,204,113,0.15);
+    border: 1px solid rgba(46,204,113,0.4);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 20px auto;
+    font-size: 26px;
+    color: #6fe0a0;
+}
+
+.success-panel h3 { font-size: 20px; margin-bottom: 10px; }
+.success-panel p { color: #999; font-size: 14px; margin-bottom: 6px; }
+.success-panel .ref-number {
+    display: inline-block;
+    background: rgba(157,56,246,0.15);
+    border: 1px solid rgba(157,56,246,0.4);
+    color: #cd9bfb;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    margin: 12px 0;
+}
+
+@media(max-width: 700px){
+    .form-row { grid-template-columns: 1fr; }
+}
+
+@media(max-width: 640px){
+    .pv-hero h1 { font-size: 30px; }
+}

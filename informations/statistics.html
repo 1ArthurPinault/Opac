@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Statistics | Opac</title>
+
+    <link rel="shortcut icon" href="../image/icon/Globe.svg">
+    <link rel="stylesheet" href="../landing/landing.css">
+    <link rel="stylesheet" href="statistics.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <a href="../index.html" class="logo">OPAC <span class="logo-span">.</span></a>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="../index.html#home">Home</a></li>
+                <li class="dropdown">
+                    <a href="../index.html#applicant">Applicant <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../applicant/jobs.html">Jobs</a></li>
+                        <li><a href="../applicant/interviews.html">Interviews</a></li>
+                        <li><a href="../applicant/companies.html">Companies</a></li>
+                        <li><a href="../applicant/guide.html">Guide</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="../index.html#recruiter">Recruiter <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../recruiter/recruit.html">Recruit</a></li>
+                        <li><a href="../recruiter/pricing.html">Pricing</a></li>
+                        <li><a href="../recruiter/dashboard.html">Dashboard</a></li>
+                        <li><a href="../recruiter/contact.html">Contact</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="../index.html#informations">Informations <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="statistics.html">Statistics</a></li>
+                        <li><a href="privacy.html">Privacy</a></li>
+                        <li><a href="terms.html">Terms</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="nav-actions">
+            <a href="../apply/apply.html" class="nav-btn nav-btn">Apply</a>
+            <a href="../join/join.html" class="nav-btn">Join</a>
+        </div>
+
+    </header>
+
+    <main>
+
+        <section class="st-hero">
+            <div class="badge">Statistics</div>
+            <h1>The numbers behind<br>why Opac exists</h1>
+            <p>Hiring bias is not a feeling, it is a measured, repeated finding across independent studies. Here is the evidence, organized by category, with every source named.</p>
+        </section>
+
+        <div class="tabs">
+            <button class="tab-btn active" data-tab="tab-origin">Origin &amp; Ethnicity</button>
+            <button class="tab-btn" data-tab="tab-gender">Gender</button>
+            <button class="tab-btn" data-tab="tab-disability">Disability</button>
+            <button class="tab-btn" data-tab="tab-lgbtq">LGBTQ+</button>
+        </div>
+
+        <div class="tab-panel active" id="tab-origin">
+            <p class="panel-intro">French hiring discrimination based on perceived origin has been documented for over a decade through matched-CV field experiments.</p>
+
+            <div class="stats-grid">
+
+                <div class="stat-card">
+                    <div class="stat-number">25+</div>
+                    <p class="stat-desc">Criteria on which hiring discrimination is explicitly prohibited under French law, from origin to religion and political opinions.</p>
+                    <p class="stat-source">Source: Code du travail, article L1132-1</p>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-number">+20%</div>
+                    <p class="stat-desc">Higher rejection rate for candidates with a Maghreb-sounding name compared to equally qualified candidates with a French-sounding name.</p>
+                    <p class="stat-source">Source: DARES, IPP, ISM Corum, testing 2021</p>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-number">18% vs 25%</div>
+                    <p class="stat-desc">Interview callback rate for an administrative-role candidate with a Maghreb-sounding name, versus an equivalent reference candidate, in Ile-de-France.</p>
+                    <p class="stat-source">Source: CNRS testing campaign, 2021-2022</p>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-number">~40%</div>
+                    <p class="stat-desc">Average hiring discrimination gap measured against candidates from an immigration background, based on matched-CV field experiments in the Paris region.</p>
+                    <p class="stat-source">Source: INSEE, Economie et Statistique n.464-465-466, 2013</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="tab-panel" id="tab-gender">
+            <p class="panel-intro">Gender pay and access gaps persist in France even where a role and employer are identical.</p>
+
+            <div class="stats-grid">
+
+                <div class="stat-card">
+                    <div class="stat-number">22.2%</div>
+                    <p class="stat-desc">Average gap between women's and men's overall annual salary income in the French private sector, all working time included.</p>
+                    <p class="stat-source">Source: INSEE Focus n.349, March 2025 (2023 data)</p>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-number">14.2%</div>
+                    <p class="stat-desc">The gap that remains between women and men at equivalent full-time working hours, once part-time work is factored out.</p>
+                    <p class="stat-source">Source: INSEE Focus n.349, March 2025 (2023 data)</p>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-number">~4%</div>
+                    <p class="stat-desc">The gap that remains for the exact same position, at the same employer: the closest available measure to pure pay discrimination.</p>
+                    <p class="stat-source">Source: INSEE, 2023 data, published 2025</p>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-number">24%</div>
+                    <p class="stat-desc">Share of women among the best-paid 1% of private-sector positions, despite representing 42% of full-time equivalent jobs.</p>
+                    <p class="stat-source">Source: INSEE Focus n.349, March 2025 (2023 data)</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="tab-panel" id="tab-disability">
+            <p class="panel-intro">Employment access for people with a recognized disability remains far below the national average, despite a legal quota in place since 1987.</p>
+
+            <div class="stats-grid">
+
+                <div class="stat-card">
+                    <div class="stat-number">39%</div>
+                    <p class="stat-desc">Employment rate for people with a recognized disability in France, nearly half the rate of the overall working-age population.</p>
+                    <p class="stat-source">Source: INSEE data via Observatoire des inegalites, 2023</p>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-number">68%</div>
+                    <p class="stat-desc">Employment rate for the overall working-age population in France, shown here for comparison.</p>
+                    <p class="stat-source">Source: INSEE, 2023 data</p>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-number">12%</div>
+                    <p class="stat-desc">Unemployment rate among people with a recognized disability, close to double the 7% rate measured for the total workforce.</p>
+                    <p class="stat-source">Source: INSEE data via Observatoire des inegalites, 2023</p>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-number">28%</div>
+                    <p class="stat-desc">Share of companies subject to France's disability-employment quota that still employ no disabled worker at all.</p>
+                    <p class="stat-source">Source: Agefiph, national tableau de bord, 2025</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="tab-panel" id="tab-lgbtq">
+            <p class="panel-intro">Workplace discrimination against LGBTQ+ employees in France has increased in the most recent barometer, even as visibility has grown.</p>
+
+            <div class="stats-grid">
+
+                <div class="stat-card">
+                    <div class="stat-number">37%</div>
+                    <p class="stat-desc">Of LGBT+ employees report having experienced discrimination from their own management, up 12 points in two years.</p>
+                    <p class="stat-source">Source: Ifop for L'Autre Cercle, LGBTQIA+ barometer, 2026</p>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-number">72%</div>
+                    <p class="stat-desc">Of LGBT+ employees are now visible about their orientation or gender identity at work, up 19 points in five years.</p>
+                    <p class="stat-source">Source: Ifop for L'Autre Cercle, LGBTQIA+ barometer, 2026</p>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-number">65%</div>
+                    <p class="stat-desc">Of transgender employees report having experienced at least one act of discrimination within their organization.</p>
+                    <p class="stat-source">Source: Ifop for L'Autre Cercle, LGBTQIA+ barometer, 2026</p>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-number">2x</div>
+                    <p class="stat-desc">Fewer discriminations reported inside companies that signed L'Autre Cercle's LGBTQIA+ commitment charter, compared to the national average.</p>
+                    <p class="stat-source">Source: Ifop for L'Autre Cercle, LGBTQIA+ barometer, 2026</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="methodology">
+            <h3>Methodology and sources</h3>
+            <p>Every figure on this page comes from a named, publicly available study or official statistical source. Where a study offers several ways to measure the same gap, we show the most relevant ones rather than picking only the largest number.</p>
+            <ul>
+                <li>Code du travail, article L1132-1</li>
+                <li>DARES, IPP, ISM Corum, correspondence testing study, 2021</li>
+                <li>CNRS, testing campaign in Ile-de-France, 2021-2022</li>
+                <li>INSEE, Economie et Statistique n.464-465-466, 2013</li>
+                <li>INSEE Focus n.349, "Ecart de salaire entre femmes et hommes en 2023", March 2025</li>
+                <li>INSEE data via Observatoire des inegalites, "Emploi et handicap", 2023</li>
+                <li>Agefiph, national tableau de bord, 2025</li>
+                <li>Ifop for L'Autre Cercle, LGBTQIA+ barometer, 2026</li>
+            </ul>
+        </div>
+
+        <section class="cta-banner">
+            <h2>See how Opac addresses each of these gaps</h2>
+            <p>Read the full breakdown of our blind interview process and its legal grounding.</p>
+            <div class="cta-buttons">
+                <a href="../applicant/interviews.html" class="primary">Read the interview process</a>
+                <a href="../applicant/guide.html" class="secondary">Read the applicant guide</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-logo">
+            <p>Opac <span>.</span></p>
+        </div>
+        <p class="right-footer">All right are reserved <span>&copy; 2026</span></p>
+    </footer>
+
+    <script src="statistics.js"></script>
+
+</body>
+
+</html>
