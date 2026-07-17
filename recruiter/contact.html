@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact | Opac</title>
+
+    <link rel="shortcut icon" href="../image/icon/Globe.svg">
+    <link rel="stylesheet" href="../landing/landing.css">
+    <link rel="stylesheet" href="contact.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <a href="../index.html" class="logo">OPAC <span class="logo-span">.</span></a>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="../index.html#home">Home</a></li>
+                <li class="dropdown">
+                    <a href="../index.html#applicant">Applicant <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../applicant/jobs.html">Jobs</a></li>
+                        <li><a href="../applicant/interviews.html">Interviews</a></li>
+                        <li><a href="../applicant/companies.html">Companies</a></li>
+                        <li><a href="../applicant/guide.html">Guide</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="../index.html#recruiter">Recruiter <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="recruit.html">Recruit</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="../index.html#informations">Informations <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../informations/about.html">About</a></li>
+                        <li><a href="../informations/statistics.html">Statistics</a></li>
+                        <li><a href="../informations/privacy.html">Privacy</a></li>
+                        <li><a href="../informations/terms.html">Terms</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="nav-actions">
+            <a href="../apply/apply.html" class="nav-btn nav-btn">Apply</a>
+            <a href="../join/join.html" class="nav-btn">Join</a>
+        </div>
+
+    </header>
+
+    <main>
+
+        <section class="ct-hero">
+            <div class="badge">Contact</div>
+            <h1>Let's talk about your hiring</h1>
+            <p>Book a demo, ask about pricing, or tell us about a partnership idea. Our team replies within one business day.</p>
+        </section>
+
+        <div class="ct-layout">
+
+            <div class="form-card" id="form-card">
+
+                <form id="contact-form" novalidate>
+
+                    <div class="form-row">
+
+                        <div class="field">
+                            <label for="first-name">First name</label>
+                            <input type="text" id="first-name">
+                            <p class="error-text"></p>
+                        </div>
+
+                        <div class="field">
+                            <label for="last-name">Last name</label>
+                            <input type="text" id="last-name">
+                            <p class="error-text"></p>
+                        </div>
+
+                    </div>
+
+                    <div class="field">
+                        <label for="work-email">Work email</label>
+                        <input type="email" id="work-email" placeholder="you@company.com">
+                        <p class="error-text"></p>
+                    </div>
+
+                    <div class="form-row">
+
+                        <div class="field">
+                            <label for="company">Company name</label>
+                            <input type="text" id="company">
+                            <p class="error-text"></p>
+                        </div>
+
+                        <div class="field">
+                            <label for="company-size">Company size</label>
+                            <select id="company-size">
+                                <option value="1-10">1-10 employees</option>
+                                <option value="11-50">11-50 employees</option>
+                                <option value="51-200">51-200 employees</option>
+                                <option value="201-1000">201-1000 employees</option>
+                                <option value="1000+">1000+ employees</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <div class="field">
+                        <label for="request-type">What can we help with?</label>
+                        <select id="request-type">
+                            <option value="demo">Book a demo</option>
+                            <option value="pricing">Ask about pricing</option>
+                            <option value="partnership">Partnership inquiry</option>
+                            <option value="other">Other question</option>
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <label for="message">Message</label>
+                        <textarea id="message" placeholder="Tell us about your hiring needs..."></textarea>
+                        <p class="error-text"></p>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Send message</button>
+
+                    <p class="form-note">By submitting, you agree to our <a href="../informations/privacy.html" style="color:#cd9bfb;">Privacy Policy</a>.</p>
+
+                </form>
+
+                <div class="success-panel" id="success-panel">
+                    <div class="check-circle"><i class="fa-solid fa-check"></i></div>
+                    <h3>Thanks, <span class="success-name"></span>!</h3>
+                    <p>Your message has been received. Our team will get back to you within one business day.</p>
+                </div>
+
+            </div>
+
+            <div>
+
+                <div class="info-card">
+                    <h3>Other ways to reach us</h3>
+
+                    <div class="info-row">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <p class="info-label">Email</p>
+                            <p class="info-value">sales@opac.io</p>
+                        </div>
+                    </div>
+
+                    <div class="info-row">
+                        <i class="fa-solid fa-clock"></i>
+                        <div>
+                            <p class="info-label">Response time</p>
+                            <p class="info-value">Within 1 business day</p>
+                        </div>
+                    </div>
+
+                    <div class="info-row">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <p class="info-label">Office</p>
+                            <p class="info-value">Paris, France</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="info-card">
+                    <h3>What happens next</h3>
+                    <ul class="next-steps">
+                        <li><span class="num">1</span> Our team reviews your request within one business day.</li>
+                        <li><span class="num">2</span> We schedule a short call to understand your hiring needs.</li>
+                        <li><span class="num">3</span> You get a tailored plan recommendation and next steps.</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-logo">
+            <p>Opac <span>.</span></p>
+        </div>
+        <p class="right-footer">All right are reserved <span>&copy; 2026</span></p>
+    </footer>
+
+    <script src="contact.js"></script>
+
+</body>
+
+</html>
