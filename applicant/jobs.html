@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jobs | Opac</title>
+
+    <link rel="shortcut icon" href="../image/icon/Globe.svg">
+    <link rel="stylesheet" href="../landing/landing.css">
+    <link rel="stylesheet" href="jobs.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <a href="../index.html" class="logo">OPAC <span class="logo-span">.</span></a>
+
+        <nav>
+
+            <ul class="nav-links">
+
+                <li><a href="../index.html#home">Home</a></li>
+
+                <li class="dropdown">
+                    <a href="../index.html#applicant">
+                        Applicant
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="jobs.html">Jobs</a></li>
+                        <li><a href="interviews.html">Interviews</a></li>
+                        <li><a href="companies.html">Companies</a></li>
+                        <li><a href="guide.html">Guide</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="../index.html#recruiter">
+                        Recruiter
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../recruiter/recruit.html">Recruit</a></li>
+                        <li><a href="../recruiter/pricing.html">Pricing</a></li>
+                        <li><a href="../recruiter/dashboard.html">Dashboard</a></li>
+                        <li><a href="../recruiter/contact.html">Contact</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="../index.html#informations">
+                        Informations
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../informations/about.html">About</a></li>
+                        <li><a href="../informations/statistics.html">Statistics</a></li>
+                        <li><a href="../informations/privacy.html">Privacy</a></li>
+                        <li><a href="../informations/terms.html">Terms</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+
+        </nav>
+
+        <div class="nav-actions">
+            <a href="../apply/apply.html" class="nav-btn nav-btn">Apply</a>
+            <a href="../join/join.html" class="nav-btn">Join</a>
+        </div>
+
+    </header>
+
+    <main>
+
+        <section class="jobs-hero">
+            <div class="badge">Open positions</div>
+            <h1>Every application judged<br>on skills alone</h1>
+            <p>Browse open roles across tech, finance, business, law and design. Your name, gender, age and background stay hidden until a company decides to make you an offer.</p>
+        </section>
+
+        <div class="trust-banner">
+            <i class="fa-solid fa-shield-halved"></i>
+            <p>All applications go through Opac's 3-step blind evaluation process. <a href="guide.html">See how it works</a></p>
+        </div>
+
+        <div class="filters">
+
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="job-search" placeholder="Search by job title, company or city...">
+            </div>
+
+            <select id="sort-select">
+                <option value="recent">Most recent</option>
+                <option value="salary-high">Salary: high to low</option>
+                <option value="salary-low">Salary: low to high</option>
+            </select>
+
+        </div>
+
+        <div class="category-pills">
+            <button class="pill active" data-category="All">All</button>
+            <button class="pill" data-category="Technology">Technology</button>
+            <button class="pill" data-category="Finance">Finance</button>
+            <button class="pill" data-category="Business">Business</button>
+            <button class="pill" data-category="Marketing">Marketing</button>
+            <button class="pill" data-category="Legal">Legal</button>
+            <button class="pill" data-category="Design">Design</button>
+            <button class="pill" data-category="Science">Science</button>
+        </div>
+
+        <p class="results-count" id="results-count"></p>
+
+        <div class="job-grid" id="job-grid"></div>
+
+        <div class="premium-teaser">
+            <div>
+                <h2>Want first access to every new role?</h2>
+                <p>Opac Premium gives applicants early access to new postings, unlimited applications and a direct anonymous line to recruiters.</p>
+            </div>
+            <a href="../recruiter/pricing.html">See applicant plans</a>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-logo">
+            <p>Opac <span>.</span></p>
+        </div>
+        <p class="right-footer">All right are reserved <span>&copy; 2026</span></p>
+    </footer>
+
+    <script src="jobs.js"></script>
+
+</body>
+
+</html>
